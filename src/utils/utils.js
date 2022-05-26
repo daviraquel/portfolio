@@ -1,4 +1,5 @@
 import flask from "../assets/img/flask.webp";
+import flaskApi from "../assets/img/flaskApi.webp";
 import nft from "../assets/img/nft.webp";
 import esolutions from "../assets/img/esolutions.webp";
 import brooklyn from "../assets/img/brooklyn.webp";
@@ -58,12 +59,12 @@ const techs = {
 
 export const works = [
   {
-    title: "NFT Marketplace",
-    link: "https://github.com/daviraquel/capstone-q3-marcelo-g16",
+    title: "Brooklyn Brothers",
+    link: "https://desafio-brooklyn-brothers-davi.vercel.app/",
     description:
-      "Capstone project for the Kenzie Academy Flask course. RESTful API simulating a NFT marketplace, made with flask, psycopg2 and implemented in Heroku.",
-    techs: [techs.python, techs.flask, techs.postgres, techs.heroku],
-    imageUrl: nft,
+      "Coding challenge for The Brooklyn Brothers. Landing page website built in React from Figma design provided by the interviewer.",
+    techs: [techs.react, techs.figma],
+    imageUrl: brooklyn,
   },
   {
     title: "Rick & Morty Maze",
@@ -74,20 +75,12 @@ export const works = [
     imageUrl: "https://i.imgur.com/zynxkEs.png",
   },
   {
-    title: "SOS Brasil",
-    link: "https://sos-brasil.vercel.app/",
+    title: "RESTful API Flask template",
+    link: "https://github.com/daviraquel/capstone-q3-marcelo-g16",
     description:
-      "Capstone project for the Kenzie Academy front end developer course. It's the MVP for a webapp to help charities manage people and donations.",
-    techs: [techs.react, techs.typescript],
-    imageUrl: "https://i.imgur.com/5P97lv4.png",
-  },
-  {
-    title: "Brooklyn Brothers",
-    link: "https://desafio-brooklyn-brothers-davi.vercel.app/",
-    description:
-      "Coding challenge for an interview with The Brooklyn Brothers. Website built in React from a Figma template provided by the interviewer.",
-    techs: [techs.react, techs.figma],
-    imageUrl: brooklyn,
+      "Personal project. Template and instructions to help engineers develop RESTful API's using Flask and PostgreSQL.",
+    techs: [techs.python, techs.flask, techs.postgres],
+    imageUrl: flaskApi,
   },
   {
     title: "MVP e-solutions",
@@ -96,5 +89,21 @@ export const works = [
       "Freelance project. Responsive website made for an electric vehicle startup. Built in React from a previous HTML template provided by the client.",
     techs: [techs.react, techs.css],
     imageUrl: esolutions,
+  },
+  {
+    title: "NFT Marketplace",
+    link: "https://github.com/daviraquel/capstone-q3-marcelo-g16",
+    description:
+      "Capstone project for the Kenzie Academy Flask course. RESTful API simulating a NFT marketplace, made with flask, psycopg2 and implemented in Heroku.",
+    techs: [techs.python, techs.flask, techs.postgres, techs.heroku],
+    imageUrl: nft,
+  },
+  {
+    title: "SOS Brasil",
+    link: "https://sos-brasil.vercel.app/",
+    description:
+      "Capstone group project for the Kenzie Academy front end developer course. It's the MVP for a webapp to help charities manage people and donations.",
+    techs: [techs.react, techs.typescript],
+    imageUrl: "https://i.imgur.com/5P97lv4.png",
   },
 ];

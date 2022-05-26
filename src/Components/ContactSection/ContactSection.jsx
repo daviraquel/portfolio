@@ -2,24 +2,28 @@ import { useState, useEffect } from "react";
 import { FaLinkedin } from "react-icons/fa";
 import { BsGithub } from "react-icons/bs";
 import { FiMail } from "react-icons/fi";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 import { ContactsContainer, LinkContainer } from "./ContactSection.styled";
 import duck from "../../assets/img/duck.webp";
 
 export const ContactSection = () => {
-  const [windowSize, setWindowSize] = useState(window.innerWidth);
+  const [titleRef, titleInView] = useInView({
+    triggerOnce: true,
+    rootMargin: "-100px 0px",
+  });
 
+  const [windowSize, setWindowSize] = useState(window.innerWidth);
   const updateSize = () => {
     setWindowSize(window.innerWidth);
   };
-
   useEffect(() => {
     window.addEventListener("resize", updateSize);
     return () => window.removeEventListener("resize", updateSize);
   });
 
   const duckNoise = new Audio("/duck.mp3");
-
   const playNoise = () => {
     duckNoise.play();
   };
@@ -37,7 +41,16 @@ export const ContactSection = () => {
         </div>
       ) : null}
       <div className="textContainer">
-        <h2>Get in touch!</h2>
+        <motion.h2
+          ref={titleRef}
+          animate={{
+            x: titleInView ? 0 : -200,
+            opacity: titleInView ? 1 : 0,
+          }}
+          transition={{ duration: 3 }}
+        >
+          Get in touch!
+        </motion.h2>
       </div>
       <LinkContainer>
         <a
