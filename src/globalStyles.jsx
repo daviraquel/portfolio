@@ -20,6 +20,7 @@ export const GlobalStyle = createGlobalStyle`
     --swiper-theme-color: ${(props) => props.theme.colors.primary};
   }
   html{
+    scroll-snap-type: y;
     scroll-behavior: smooth;
   }
   body {
@@ -27,6 +28,9 @@ export const GlobalStyle = createGlobalStyle`
     font-family: "Inter", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+  section{
+    scroll-snap-align: start;
   }
 
   h1 {
