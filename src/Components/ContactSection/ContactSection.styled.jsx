@@ -12,6 +12,7 @@ export const LinkContainer = styled.div`
     width: 100px;
     height: 100px;
     color: ${(props) => props.theme.colors.primary};
+    transition: 0.3s;
   }
   svg {
     height: 100%;

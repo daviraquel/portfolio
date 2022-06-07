@@ -20,7 +20,7 @@ export const GlobalStyle = createGlobalStyle`
     --swiper-theme-color: ${(props) => props.theme.colors.primary};
   }
   html{
-    scroll-snap-type: y;
+    scroll-snap-type: y proximity;
     scroll-behavior: smooth;
   }
   body {
