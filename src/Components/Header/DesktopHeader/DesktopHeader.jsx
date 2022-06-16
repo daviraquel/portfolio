@@ -18,7 +18,7 @@ export const DesktopHeader = () => {
       <HeaderContainer>
         <HeaderLink id="linkContact" text="Home" link="/" />
         <HeaderLink id="linkContact" text="Works" link="/#works" />
-        <HeaderLink id="linkContact" text="Contact" link="/contact" />
+        <HeaderLink id="linkContact" text="Contact" link="/#contact" />
       </HeaderContainer>
     </Header>
   );
