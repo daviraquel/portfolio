@@ -1,37 +1,37 @@
-import { useState, useEffect } from "react";
-import Typical from "react-typical";
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import { useState, useEffect } from "react"
+// import Typical from "react-typical"
+import { motion } from "framer-motion"
+import { useInView } from "react-intersection-observer"
 
-import { AboutContainer } from "./AboutSection.styled";
-import { DownArrow } from "../DownArrow/DownArrow";
-import li from "../../assets/img/li.webp";
-import intake from "../../assets/img/intake.webp";
+import { AboutContainer } from "./AboutSection.styled"
+import { DownArrow } from "../DownArrow/DownArrow"
+import li from "../../assets/img/li.webp"
+import intake from "../../assets/img/intake.webp"
 
 export const AboutSection = () => {
-  const [windowSize, setWindowSize] = useState(window.innerWidth);
+  const [windowSize, setWindowSize] = useState(window.innerWidth)
   const updateSize = () => {
-    setWindowSize(window.innerWidth);
-  };
+    setWindowSize(window.innerWidth)
+  }
   useEffect(() => {
-    window.addEventListener("resize", updateSize);
-    return () => window.removeEventListener("resize", updateSize);
-  });
+    window.addEventListener("resize", updateSize)
+    return () => window.removeEventListener("resize", updateSize)
+  })
 
   const [firstTextRef, firstTextInView] = useInView({
     triggerOnce: true,
     rootMargin: "-50px 0px",
-  });
+  })
 
   const [secondTextRef, secondTextInView] = useInView({
     triggerOnce: true,
     rootMargin: "-50px 0px",
-  });
+  })
 
   const [thirdTextRef, thirdTextInView] = useInView({
     triggerOnce: true,
     rootMargin: "-50px 0px",
-  });
+  })
 
   return (
     <AboutContainer id="about">
@@ -47,7 +47,7 @@ export const AboutSection = () => {
       ) : null}
 
       <div className="textContainer">
-        <Typical
+        {/* <Typical
           steps={
             firstTextInView
               ? [
@@ -63,7 +63,7 @@ export const AboutSection = () => {
               : ["", 0]
           }
           wrapper="h2"
-        />
+        /> */}
         <motion.p
           ref={firstTextRef}
           animate={{
@@ -72,9 +72,11 @@ export const AboutSection = () => {
           }}
           transition={{ duration: 3 }}
         >
-          I studied mechanical engineering and worked as a CAD designer in
-          engineering projects: FSAE, electric vehicles, reverse engineering, 3D
-          printing and so on.
+          Years of experience in engineering projects within the auto industry
+          and electric vehicle startups taught me great{" "}
+          <span>attention to detail</span> as well as{" "}
+          <span>problem solving</span> abilities, all while{" "}
+          <span>managing projects efficiently</span>.
         </motion.p>
         <motion.p
           ref={secondTextRef}
@@ -84,9 +86,9 @@ export const AboutSection = () => {
           }}
           transition={{ duration: 3 }}
         >
-          I started learning development out of curiosity. Ended up getting
-          really into it and decided to get serious about it. So I quit my job
-          and started a full stack web developer course!
+          Fueled by a perpetual <span>passion for technology</span>, I embarked
+          on a year-long, full-time course. This immersive experience helped me
+          improve skills and empowered me to transition into a developer role.
         </motion.p>
         <motion.p
           ref={thirdTextRef}
@@ -96,12 +98,25 @@ export const AboutSection = () => {
           }}
           transition={{ duration: 3 }}
         >
-          It's been an awesome journey so far and it never ends. Got big plans
-          and big challenges ahead. Maybe we can help each other out? Get in
-          touch!
+          Since then, my focus has been on collaborating with data scientists
+          and analysts to improve <span>data visualization</span> and{" "}
+          <span>user experience</span>.Through the creation of user-friendly
+          interfaces and layouts, I strive to make complex data more accessible
+          and visually appealing.
         </motion.p>
+        {/* <motion.p
+          ref={thirdTextRef}
+          animate={{
+            y: firstTextInView ? 0 : 100,
+            opacity: thirdTextInView ? 1 : 0,
+          }}
+          transition={{ duration: 3 }}
+        >
+          If you see an opportunity for collaboration or if there's a way I can
+          assist you, let's connect!
+        </motion.p> */}
         <DownArrow link="#works" />
       </div>
     </AboutContainer>
-  );
-};
+  )
+}

@@ -1,9 +1,9 @@
 //import { motion } from "framer-motion";
 //import { useInView } from "react-intersection-observer";
 
-import { WorksContainer } from "./WorksSection.styled";
-import { Carrousel } from "../Carrousel/Carrousel";
-import { DownArrow } from "../DownArrow/DownArrow";
+import { WorksContainer } from "./WorksSection.styled"
+import { Carrousel } from "../Carrousel/Carrousel"
+import { DownArrow } from "../DownArrow/DownArrow"
 
 export const WorksSection = () => {
   // const [titleRef, titleInView] = useInView({
@@ -14,10 +14,11 @@ export const WorksSection = () => {
   return (
     <WorksContainer id="works">
       <div className="textContainer">
-        <h2>Check out some of the projects I worked on!</h2>
+        <h2>Some projects to showcase my skills!</h2>
+        <p>(without infringing NDA's)</p>
         <Carrousel />
-        <DownArrow link="#contact" />
       </div>
+      <DownArrow link="#contact" />
     </WorksContainer>
-  );
-};
+  )
+}

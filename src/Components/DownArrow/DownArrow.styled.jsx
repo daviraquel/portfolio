@@ -1,12 +1,15 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const ArrowLink = styled.a`
-  svg {
+  div {
     position: absolute;
-    width: 46px;
-    height: 25px;
     left: calc(50% - 23px);
     bottom: 15px;
+    padding: 20px 10px 0 10px;
+  }
+  svg {
+    width: 46px;
+    height: 25px;
     animation: 2s infinite bounce;
   }
   polyline {
@@ -79,4 +82,4 @@ export const ArrowLink = styled.a`
       transform: translateY(-15px);
     }
   }
-`;
+`

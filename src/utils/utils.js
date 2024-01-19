@@ -1,8 +1,8 @@
-import flask from "../assets/img/flask.webp";
-import flaskApi from "../assets/img/flaskApi.webp";
-import nft from "../assets/img/nft.webp";
-import esolutions from "../assets/img/esolutions.webp";
-import brooklyn from "../assets/img/brooklyn.webp";
+import flask from "../assets/img/flask.webp"
+import flaskApi from "../assets/img/flaskApi.webp"
+import nft from "../assets/img/nft.webp"
+import esolutions from "../assets/img/esolutions.webp"
+// import brooklyn from "../assets/img/brooklyn.webp"
 
 const techs = {
   html: {
@@ -55,30 +55,22 @@ const techs = {
     altText: "icon for figma",
     linkUrl: "https://www.figma.com/",
   },
-};
+}
 
 export const works = [
-  {
-    title: "Brooklyn Brothers",
-    link: "https://desafio-brooklyn-brothers-davi.vercel.app/",
-    description:
-      "Coding challenge for The Brooklyn Brothers. Landing page website built in React from Figma design provided by the interviewer.",
-    techs: [techs.react, techs.figma],
-    imageUrl: brooklyn,
-  },
-  {
-    title: "Rick & Morty Maze",
-    link: "https://daviraquel.github.io/labirinto_rick_morty/",
-    description:
-      "Help Pickle Rick get to the serum! This was an asignment in a front end course. Should be a simple maze but I got carried away and made it a 5 level game full of surprises.",
-    techs: [techs.html, techs.css, techs.javascript],
-    imageUrl: "https://i.imgur.com/zynxkEs.png",
-  },
+  // {
+  //   title: "Brooklyn Brothers",
+  //   link: "https://desafio-brooklyn-brothers-davi.vercel.app/",
+  //   description:
+  //     "Coding challenge for The Brooklyn Brothers. Landing page website built in React from Figma design provided by the interviewer.",
+  //   techs: [techs.react, techs.figma],
+  //   imageUrl: brooklyn,
+  // },
   {
     title: "RESTful API Flask template",
     link: "https://github.com/daviraquel/capstone-q3-marcelo-g16",
     description:
-      "Personal project. Template and instructions to help engineers develop RESTful API's using Flask and PostgreSQL.",
+      "Boilerplate code and instructions to help engineers develop RESTful API's using Flask and PostgreSQL more easily. Django version coming soon.",
     techs: [techs.python, techs.flask, techs.postgres],
     imageUrl: flaskApi,
   },
@@ -86,9 +78,17 @@ export const works = [
     title: "MVP e-solutions",
     link: "https://website-mvp-esolutions-daviraquel.vercel.app/",
     description:
-      "Freelance project. Responsive website made for an electric vehicle startup. Built in React from a previous HTML template provided by the client.",
+      "This was my first and only freelance project. Responsive website made for MVP e-solutions. Built in React colaborating with a designer hired by the client.",
     techs: [techs.react, techs.css],
     imageUrl: esolutions,
+  },
+  {
+    title: "Rick & Morty Maze",
+    link: "https://daviraquel.github.io/labirinto_rick_morty/",
+    description:
+      "Help Pickle Rick get to the serum! This fun maze game developed entirely in vanilla JS exhibits DOM manipulation, event handling, CSS animations.",
+    techs: [techs.html, techs.css, techs.javascript],
+    imageUrl: "https://i.imgur.com/zynxkEs.png",
   },
   {
     title: "NFT Marketplace",
@@ -106,4 +106,4 @@ export const works = [
     techs: [techs.react, techs.typescript],
     imageUrl: "https://i.imgur.com/5P97lv4.png",
   },
-];
+]

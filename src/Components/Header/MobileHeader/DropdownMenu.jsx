@@ -1,13 +1,13 @@
-import { StyledMenu, DropDownLink } from "./MobileHeader.styled";
+import { StyledMenu, DropDownLink } from "./MobileHeader.styled"
 
 export const DropdownMenu = ({ menuOpen, setMenuOpen }) => {
-  const closeMenu = () => setMenuOpen(false);
+  const closeMenu = () => setMenuOpen(false)
   return (
     <StyledMenu menuOpen={menuOpen}>
       <ul>
         <DropDownLink key="1">
           <a href="/#works" onClick={closeMenu}>
-            Works
+            Work
           </a>
         </DropDownLink>
         <DropDownLink key="1">
@@ -17,5 +17,5 @@ export const DropdownMenu = ({ menuOpen, setMenuOpen }) => {
         </DropDownLink>
       </ul>
     </StyledMenu>
-  );
-};
+  )
+}

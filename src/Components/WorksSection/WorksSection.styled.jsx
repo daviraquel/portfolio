@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const WorksContainer = styled.section`
   height: 100vh;
@@ -9,6 +9,12 @@ export const WorksContainer = styled.section`
   h2 {
     text-align: center;
   }
+  p {
+    font-size: 1rem;
+    text-align: center;
+    margin: -10px 0 0 0;
+    opacity: 0.8;
+  }
   .textContainer {
     width: 80%;
     max-width: ${(props) => props.theme.width.maxDesktop};
@@ -16,6 +22,5 @@ export const WorksContainer = styled.section`
     z-index: 10;
   }
   @media (min-width: 768px) {
-    padding-top: 150px;
   }
-`;
+`

@@ -1,7 +1,7 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
-import li from "../../assets/img/li.webp";
-import intake from "../../assets/img/intake.webp";
+import li from "../../assets/img/li.webp"
+import intake from "../../assets/img/intake.webp"
 
 export const AboutContainer = styled.section`
   height: 100vh;
@@ -9,6 +9,9 @@ export const AboutContainer = styled.section`
   color: ${(props) => props.theme.colors.white};
   padding-top: 80px;
   box-sizing: border-box;
+  span {
+    color: ${(props) => props.theme.colors.primary};
+  }
   .textContainer {
     width: 80%;
     max-width: ${(props) => props.theme.width.maxDesktop};
@@ -43,4 +46,4 @@ export const AboutContainer = styled.section`
   @media (min-width: 768px) {
     padding-top: 150px;
   }
-`;
+`
