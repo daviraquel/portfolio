@@ -1,4 +1,5 @@
 import React from "react"
+import { handleClickSection } from "../../../helpers/handleClickSection"
 
 interface DropdownMenuProps {
   menuOpen: boolean
@@ -9,7 +10,10 @@ export const DropdownMenu: React.FC<DropdownMenuProps> = ({
   menuOpen,
   setMenuOpen,
 }) => {
-  const closeMenu = () => setMenuOpen(false)
+  const handleClick = (section: string) => {
+    handleClickSection(section)
+    setMenuOpen(false)
+  }
 
   return (
     <div
@@ -19,22 +23,20 @@ export const DropdownMenu: React.FC<DropdownMenuProps> = ({
     >
       <ul className={`m-0 list-none p-0 ${menuOpen ? "block" : "hidden"}`}>
         <li className="relative">
-          <a
-            href="/#works"
-            onClick={closeMenu}
+          <button
+            onClick={() => handleClick("#works")}
             className="text-sm text-white block uppercase p-3"
           >
             Work
-          </a>
+          </button>
         </li>
         <li className="relative">
-          <a
-            href="/#contact"
-            onClick={closeMenu}
+          <button
+            onClick={() => handleClick("#contact")}
             className="text-sm text-white block uppercase p-3"
           >
             Contact
-          </a>
+          </button>
         </li>
       </ul>
     </div>

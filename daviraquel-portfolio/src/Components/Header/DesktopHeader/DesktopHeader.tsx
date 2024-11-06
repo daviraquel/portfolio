@@ -20,9 +20,9 @@ export const DesktopHeader: React.FC = () => {
       }`}
     >
       <div className="container mx-auto flex flex-row gap-12 items-center justify-end">
-        <HeaderLink text="Home" link="/" />
-        <HeaderLink text="Work" link="/#works" />
-        <HeaderLink text="Contact" link="/#contact" />
+        <HeaderLink text="Home" link="body" />
+        <HeaderLink text="Work" link="#works" />
+        <HeaderLink text="Contact" link="#contact" />
       </div>
     </header>
   )

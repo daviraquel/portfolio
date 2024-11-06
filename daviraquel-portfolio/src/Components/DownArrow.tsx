@@ -1,9 +1,12 @@
+import { handleClickSection } from "../helpers/handleClickSection"
+
 interface IDownArrowProps {
   linkUrl: string
 }
+
 export const DownArrow = ({ linkUrl }: IDownArrowProps) => {
   return (
-    <a href={linkUrl}>
+    <button onClick={() => handleClickSection(linkUrl)}>
       <div className="absolute left-1/2 transform -translate-x-1/2 bottom-4 p-5">
         <svg className="w-12 h-6 animate-bounce">
           <polyline
@@ -12,6 +15,6 @@ export const DownArrow = ({ linkUrl }: IDownArrowProps) => {
           ></polyline>
         </svg>
       </div>
-    </a>
+    </button>
   )
 }
