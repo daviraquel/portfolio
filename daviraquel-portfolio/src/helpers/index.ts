@@ -2,7 +2,7 @@ import flask from "../assets/img/flask.webp"
 import flaskApi from "../assets/img/flaskApi.webp"
 import nft from "../assets/img/nft.webp"
 import esolutions from "../assets/img/esolutions.webp"
-// import brooklyn from "../assets/img/brooklyn.webp"
+import brooklyn from "../assets/img/rickdata.png"
 
 export const techs = {
   html: {
@@ -58,14 +58,14 @@ export const techs = {
 }
 
 export const works = [
-  // {
-  //   title: "Brooklyn Brothers",
-  //   link: "https://desafio-brooklyn-brothers-davi.vercel.app/",
-  //   description:
-  //     "Coding challenge for The Brooklyn Brothers. Landing page website built in React from Figma design provided by the interviewer.",
-  //   techs: [techs.react, techs.figma],
-  //   imageUrl: brooklyn,
-  // },
+  {
+    title: "Rick and Morty Data Analysis",
+    link: "https://daviraquel.github.io/rick-and-morty-data/",
+    description:
+      "How many characters are there in the series? How many of them are still alive? What percentage are aliens? This is a page to showcase data visualization using React libraries",
+    techs: [techs.react, techs.typescript],
+    imageUrl: brooklyn,
+  },
   {
     title: "RESTful API Flask template",
     link: "https://github.com/daviraquel/capstone-q3-marcelo-g16",

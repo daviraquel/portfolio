@@ -12,11 +12,11 @@ export const WorksSection: React.FC = () => {
     >
       <div className={`textContainer ${commonContainerClasses}`}>
         <h2 className={commonTextClasses}>
-          Some projects to showcase my skills!
+          Some projects showcasing my skills!
         </h2>
-        <p className={`${commonTextClasses} text-opacity-80 mt-[-2.5rem]`}>
+        {/* <p className={`${commonTextClasses} text-opacity-80 mt-[-2.5rem]`}>
           (without infringing NDA's)
-        </p>
+        </p> */}
         <Carrousel />
       </div>
       <DownArrow linkUrl="#contact" />

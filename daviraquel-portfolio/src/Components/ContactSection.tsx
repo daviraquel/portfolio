@@ -44,9 +44,9 @@ export const ContactSection: React.FC = () => {
             alt="a rubber duck wearing a horned helmet"
             className="rounded-full w-48 absolute bottom-0 left-12"
           />
-          <p className="text-gray-500 text-center absolute bottom-4 w-full">
+          {/* <p className="text-gray-500 text-center absolute bottom-4 w-full">
             Go ahead, click the barbarian duck.
-          </p>
+          </p> */}
         </div>
       )}
       <div className={`textContainer ${commonContainerClasses}`}>
