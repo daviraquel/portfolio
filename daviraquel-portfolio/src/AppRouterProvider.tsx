@@ -5,7 +5,7 @@ import { Home } from "./pages/Home"
 export const AppRouterProvider = () => {
   const router = createBrowserRouter([
     {
-      path: "/",
+      path: "/portfolio",
       element: <Home />,
     },
   ])
